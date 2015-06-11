@@ -1,0 +1,21 @@
+net: "DeepFace_set003_train_test.prototxt"
+
+test_iter: 100
+test_interval: 1000
+test_compute_loss: true
+
+base_lr: 0.00005
+momentum: 0.9
+weight_decay: 0.0005
+lr_policy: "fixed"
+gamma: 0.000005
+power: 0.75
+
+display: 100
+max_iter: 3000000
+snapshot: 40000
+snapshot_prefix: "DeepFace_set003_net"
+
+solver_mode: GPU
+
+debug_info: false
