@@ -8,16 +8,22 @@ This Deep Face Representation Experiment is based on Convolution Neural Network 
 
 Structure
 -------------
+<i class="icon-folder-open"></i>code:  data pre-processing and evaluation code.<br>
 <i class="icon-folder-open"></i>model: caffemodel and solverstate.<br>
 <i class="icon-folder-open"></i>proto: convolution network configuration. <br>
 <i class="icon-folder-open"></i>results: LFW features.<br>
+
 
 Description
 -------------
 Data Pre-processing
 >1). Download CASIA-WebFace dataset which contains 493456 face images of 10575 identities. <br>
->2). All face images is converted to gray-scale images and normalized to 144x144 according to landmarks.<br>
->3). According to the 5 facial points, we rotate two eye points horizontally and set the distance between the midpoint of eyes and the midpoint of mouth 50 pixels.<br>
+>2). All face images are converted to gray-scale images and normalized to 144x144 according to landmarks.<br>
+>3). According to the 5 facial points, we not only rotate two eye points horizontally but also set the distance between the midpoint of eyes and the midpoint of mouth(ec_mc_y), and the y axis of midpoint of eyes(ec_y) .<br>
+> |   Dataset   | size|  ec_mc_y  | ec_y| 
+| :------- | ----: | :---: | :---: |
+| CASIA-WebFace | 144x144 |  48 | 48 |
+| lfw | 128x128|  48 | 40 |
 
 Training
 >1). The model is trained by open source deep learning framework <i>caffe</i>.<br>
@@ -43,6 +49,6 @@ The paper is submitted to ACM MM2015.
   [1]: https://github.com/AlfredXiangWu/caffe
   [2]: http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html
   [3]: https://github.com/AlfredXiangWu/python_misc/blob/master/caffe/caffe_ftr.py
-  [4]: https://github.com/AlfredXiangWu/matlab_misc/tree/master/face_verification/evaluation
+  [4]: https://github.com/AlfredXiangWu/lfw_face_verification_experiment/blob/master/code/evaluation.m
   
 
