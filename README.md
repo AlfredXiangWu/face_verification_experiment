@@ -22,10 +22,10 @@ Data Pre-processing
 >2). All face images are converted to gray-scale images and normalized to 144x144 according to landmarks.<br>
 >3). According to the 5 facial points, we not only rotate two eye points horizontally but also set the distance between the midpoint of eyes and the midpoint of mouth(ec_mc_y), and the y axis of midpoint of eyes(ec_y) .<br>
 
- |   Dataset     | size    |  ec_mc_y  | ec_y  | 
- | :-------------| :-----: | :----:    | :---: |
- | CASIA-WebFace | 144x144 |     48    | 48    |
- | lfw           | 128x128 |     48    | 40    |
+ |   Dataset     | size    |  ec_mc_y  | ec_y  ||
+ | :-------------| :-----: | :----:    | :---: ||
+ | CASIA-WebFace | 144x144 |     48    | 48    ||
+ | lfw           | 128x128 |     48    | 40    ||
 
 Training
 >1). The model is trained by open source deep learning framework <i>caffe</i>.<br>
