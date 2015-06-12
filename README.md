@@ -33,12 +33,12 @@ Training
 
 Evaluation
 >1). The model is evaluated on LFW data set which is a popular data set for face verification task.<br>
->2). The feature extraction is used by python program [<i>caffe_ftr.py</i>][3] and the extracted features and lfw testing pairs are located in "results" file.<br>
+>2). The feature extraction is used by python program [<i>caffe_ftr.py</i>][3]. The extracted features and lfw testing pairs are located in "results" file.<br>
 >3). To evaluate the model, the [matlab code][4] or other ROC evaluation code can be used. <br>
 
 Results
 
-  The single convolution net evaluation on unsupervised setting on lfw 
+  The single convolution net testing is evaluated on unsupervised setting only computing cosine similarity for lfw pairs.   
 
 |   Dataset   | EER | TPR@0.01   | TPR@0.001| TPR@0|
 | :------- | :----: | :---: | :---: |:---: |
