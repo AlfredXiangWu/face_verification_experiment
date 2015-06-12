@@ -23,7 +23,7 @@ Data Pre-processing
 >3). According to the 5 facial points, we not only rotate two eye points horizontally but also set the distance between the midpoint of eyes and the midpoint of mouth(ec_mc_y), and the y axis of midpoint of eyes(ec_y) .<br>
 
  |   Dataset     | size    |  ec_mc_y  | ec_y  | 
- | :---------    | :-----: | :----:    | :---: |
+ | :-------------| :-----: | :----:    | :---: |
  | CASIA-WebFace | 144x144 |     48    | 48    |
  | lfw           | 128x128 |     48    | 40    |
 
@@ -37,7 +37,8 @@ Evaluation
 >3). To evaluate the model, the [matlab code][4] or other ROC evaluation code can be used. <br>
 
 Results
-:  The single convolution net evaluation on unsupervised setting on lfw 
+
+  The single convolution net evaluation on unsupervised setting on lfw 
 
 |   Dataset   | EER | TPR@0.01   | TPR@0.001| TPR@0|
 | :------- | :----: | :---: | :---: |:---: |
