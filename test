@@ -17,24 +17,18 @@ Structure
 Description
 -------------
 Data Pre-processing
- 
-1). Download CASIA-WebFace dataset which contains 493456 face images of 10575 identities. 
-
-2). All face images is converted to gray-scale images and normalized to 144x144 according to landmarks.
-
-3). According to the 5 facial points, we rotate two eye points horizontally and set the distance between the midpoint of eyes and the midpoint of mouth 50 pixels.
+>1). Download CASIA-WebFace dataset which contains 493456 face images of 10575 identities. 
+>2). All face images is converted to gray-scale images and normalized to 144x144 according to landmarks.
+>3). According to the 5 facial points, we rotate two eye points horizontally and set the distance between the midpoint of eyes and the midpoint of mouth 50 pixels.
 
 Training
-1). The model is trained by open source deep learning framework <i>caffe</i>.
-
-2). The network configuration is showed in "proto" file and the trained model is showed in "model" file.
+>1). The model is trained by open source deep learning framework <i>caffe</i>.
+>2). The network configuration is showed in "proto" file and the trained model is showed in "model" file.
 
 Evaluation
-1). The model is evaluated on LFW data set which is a popular data set for face verification task.
-
-2). The feature extraction is used by python program [<i>caffe_ftr.py</i>][3] and the extracted features and lfw testing pairs are located in "results" file.
-
-3). To evaluate the model, the [matlab code][4] or other ROC evaluation code can be used. 
+>1). The model is evaluated on LFW data set which is a popular data set for face verification task.
+>2). The feature extraction is used by python program [<i>caffe_ftr.py</i>][3] and the extracted features and lfw testing pairs are located in "results" file.
+>3). To evaluate the model, the [matlab code][4] or other ROC evaluation code can be used. 
 
 Results
 :  The single convolution net evaluation on unsupervised setting on lfw 
