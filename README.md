@@ -45,9 +45,6 @@ Results
 | lfw | 97.77% |  94.80% | 84.37%| 43.17%|
 
 
-Publication
-------------
-The paper is submitted to ACM MM2015. 
 
   [1]: https://github.com/AlfredXiangWu/caffe
   [2]: http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html

@@ -7,6 +7,7 @@ for i = 1: length(pos_pair)
     feat1 = features(pos_pair(1, i), :)';
     feat2 = features(pos_pair(2, i), :)';
     pos_scores(i) = distance.compute_cosine_score(feat1, feat2);
+%     pos_scores(i) = -distance.compute_L2_score(feat1, feat2);
 end
 pos_label = ones(1, length(pos_pair));
 
@@ -15,6 +16,7 @@ for i = 1: length(neg_pair)
     feat1 = features(neg_pair(1, i), :)';
     feat2 = features(neg_pair(2, i), :)';
     neg_scores(i) = distance.compute_cosine_score(feat1, feat2);
+%     neg_scores(i) = -distance.compute_L2_score(feat1, feat2);
 end
 neg_label = -ones(1, length(neg_pair));
 
