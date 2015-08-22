@@ -40,10 +40,10 @@ Results
 
   The single convolution net testing is evaluated on unsupervised setting only computing cosine similarity for lfw pairs.   
 
-|   Dataset   | EER | TPR@0.01   | TPR@0.001| TPR@0| Rank-1| DIR@FAR=1%|
+|   Dataset   | EER | TPR@FPR(FAR)=1%   | TPR@FPR(FAR)=0.1%| TPR@FPR(FAR)=0| Rank-1| DIR@FAR=1%|
 | :------- | :----: | :---: | :---: |:---: | :---: |:---: |
 | lfw | 97.77% |  94.80% | 84.37%| 43.17%| 84.79%| 63.09%|
-
+| YTF | 90.72% |    -    |    -  |    -  |   -   |    -  |
 
 
   [1]: https://github.com/AlfredXiangWu/caffe
