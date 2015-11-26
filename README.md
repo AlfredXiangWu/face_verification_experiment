@@ -42,13 +42,30 @@ Results
 
 |   Dataset   | EER | TPR@FPR(FAR)=1%   | TPR@FPR(FAR)=0.1%| TPR@FPR(FAR)=0| Rank-1| DIR@FAR=1%|
 | :------- | :----: | :---: | :---: |:---: | :---: |:---: |
-| lfw | 97.77% |  94.80% | 84.37%| 43.17%| 84.79%| 63.09%|
-| YTF | 90.72% |    -    |    -  |    -  |   -   |    -  |
+| A | 97.77% |  94.80% | 84.37%| 43.17%| 84.79%| 63.09%|
+| B | 98.13% |    96.73%    |    87.13%  |    64.33%  |   89.21%   |   69.46%   |
+
+The details are published as a technical report on [arXiv][5]. 
+If you use our models, please cite the following paper:
+
+	@article{wu2015lightened,
+	  title={A Lightened CNN for Deep Face Representation},
+	  author={Wu, Xiang and He, Ran and Sun, Zhenan},
+	  journal={arXiv preprint arXiv:1511.02683},
+	  year={2015}
+	}
+	@article{wu2015learning,
+	  title={Learning Robust Deep Face Representation},
+	  author={Wu, Xiang},
+	  journal={arXiv preprint arXiv:1507.04844},
+	  year={2015}
+	}
 
 
   [1]: https://github.com/AlfredXiangWu/caffe
   [2]: http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html
   [3]: https://github.com/AlfredXiangWu/python_misc/blob/master/caffe/caffe_ftr.py
   [4]: https://github.com/AlfredXiangWu/lfw_face_verification_experiment/blob/master/code/evaluation.m
+  [5]: http://arxiv.org/abs/1511.02683
   
 
