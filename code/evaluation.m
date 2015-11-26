@@ -1,6 +1,7 @@
 % load data
-load('../results/lfw_man5pt.mat');
-load('../results/lfw_pairs.mat');
+% load('../results/LightenedCNN_A_lfw.mat');      % model A
+load('../results/LightenedCNN_B_lfw.mat');      % model B
+load('lfw_pairs.mat');
 
 % pos
 for i = 1: length(pos_pair)
@@ -31,12 +32,12 @@ roc = evaluation.evaluate('roc', scores, label);
 
 
 %% output
-fprintf('ap:                 %f\n', ap.measure);
-fprintf('eer:               %f\n', roc.measure);
-fprintf('tpr001:         %f\n', roc.extra.tpr001*100);
-fprintf('tpr0001:       %f\n', roc.extra.tpr0001*100);
+fprintf('ap:           %f\n', ap.measure);
+fprintf('eer:          %f\n', roc.measure);
+fprintf('tpr001:       %f\n', roc.extra.tpr001*100);
+fprintf('tpr0001:      %f\n', roc.extra.tpr0001*100);
 fprintf('tpr00001:     %f\n', roc.extra.tpr00001*100);
-fprintf('tpr000001:   %f\n', roc.extra.tpr000001*100);
-fprintf('tpr0:              %f\n', roc.extra.tpr0*100);
+fprintf('tpr000001:    %f\n', roc.extra.tpr000001*100);
+fprintf('tpr0:         %f\n', roc.extra.tpr0*100);
 result = [ap.measure/100 roc.measure/100  roc.extra.tpr001 roc.extra.tpr0001 roc.extra.tpr00001 roc.extra.tpr000001 roc.extra.tpr0];
 
