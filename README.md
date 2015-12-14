@@ -61,6 +61,7 @@ If you use our models, please cite the following paper:
 	  year={2015}
 	}
 
+**The released models are only allowed for non-commercial use.**
 
   [1]: https://github.com/AlfredXiangWu/caffe
   [2]: http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html
