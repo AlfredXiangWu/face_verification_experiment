@@ -1,6 +1,7 @@
 % load data
 % load('../results/LightenedCNN_A_lfw.mat');      % model A
-load('../results/LightenedCNN_B_lfw.mat');      % model B
+% load('../results/LightenedCNN_B_lfw.mat');      % model B
+load('../results/LightenedCNN_C_lfw.mat');      % model C
 load('lfw_pairs.mat');
 
 % pos
