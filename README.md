@@ -56,14 +56,14 @@ Evaluation
  1. The model is evaluated on LFW which is a popular data set for face verification task.
  2. The feature extraction is used by python program [<i>caffe_ftr.py</i>][3]. The extracted features and lfw testing pairs are located in "results" file.
  3. To evaluate the model, the [matlab code][4] or other ROC evaluation code can be used. 
- 4. The model is also evaluated on MegaFace. The dataset and evaluation code can be download from http://megaface.cs.washington.edu/
+ 4. The model is also evaluated on MegaFace. The dataset and evaluation code can be downloaded from http://megaface.cs.washington.edu/
 
 
 Results
 
 The single convolution net testing is evaluated on unsupervised setting only computing cosine similarity for lfw pairs.   
 
-|   Model | EER | TPR@FPR(FAR)=1%   | TPR@FPR(FAR)=0.1%| TPR@FPR(FAR)=0| Rank-1| DIR@FAR=1%|
+|   Model | 100% - EER | TPR@FAR=1%   | TPR@FAR=0.1%| TPR@FAR=0| Rank-1| DIR@FAR=1%|
 | :------- | :----: | :---: | :---: |:---: | :---: |:---: |
 | A | 97.77% |  94.80% | 84.37%| 43.17%| 84.79%| 63.09%|
 | B | 98.13% |    96.73%    |    87.13%  |    64.33%  |   89.21%   |   69.46%   |
