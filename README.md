@@ -1,7 +1,34 @@
-Lightened CNN for Deep Face Representation
+A Light CNN for Deep Face Representation with Noisy Labels
 ===================
+
+Citation
+---
+If you use our models, please cite the following paper:
+
+	@article{wulight,
+	  title={A Light CNN for Deep Face Representation with Noisy Labels},
+	  author={Wu, Xiang and He, Ran and Sun, Zhenan and Tan, Tieniu}
+	  journal={arXiv preprint arXiv:1511.02683},
+	  year={2015}
+	}
+	@article{wu2015lightened,
+	  title={A Lightened CNN for Deep Face Representation},
+	  author={Wu, Xiang and He, Ran and Sun, Zhenan},
+	  journal={arXiv preprint arXiv:1511.02683},
+	  year={2015}
+	}
+	@article{wu2015learning,
+	  title={Learning Robust Deep Face Representation},
+	  author={Wu, Xiang},
+	  journal={arXiv preprint arXiv:1507.04844},
+	  year={2015}
+	}
+
+
 Updates
 ---
+ - Dec 16, 2016
+	 - The MS-Celeb-1M clean list is uploaded: [Baidu Yun][6], [Google Drive][7]. 
  - Nov 08, 2016
 	 - The prototxt and model C based on caffe-rc3 is updated. The accuracy on LFW achieves 98.80% and the TPR@FAR=0 obtains **94.97%**. 
 	 - The performance of set 1 on MegaFace achieves **65.532%** for rank-1 accuracy and **75.854%** for TPR@FAR=10^-6. 
@@ -54,7 +81,7 @@ Training
 Evaluation
 
  1. The model is evaluated on LFW which is a popular data set for face verification task.
- 2. The feature extraction is used by python program [<i>caffe_ftr.py</i>][3]. The extracted features and lfw testing pairs are located in "results" file.
+ 2. The extracted features and lfw testing pairs are located in "results" file.
  3. To evaluate the model, the [matlab code][4] or other ROC evaluation code can be used. 
  4. The model is also evaluated on MegaFace. The dataset and evaluation code can be downloaded from http://megaface.cs.washington.edu/
 
@@ -71,20 +98,7 @@ The single convolution net testing is evaluated on unsupervised setting only com
 
 
 The details are published as a technical report on [arXiv][5]. 
-If you use our models, please cite the following paper:
 
-	@article{wu2015lightened,
-	  title={A Lightened CNN for Deep Face Representation},
-	  author={Wu, Xiang and He, Ran and Sun, Zhenan},
-	  journal={arXiv preprint arXiv:1511.02683},
-	  year={2015}
-	}
-	@article{wu2015learning,
-	  title={Learning Robust Deep Face Representation},
-	  author={Wu, Xiang},
-	  journal={arXiv preprint arXiv:1507.04844},
-	  year={2015}
-	}
 
 **The released models are only allowed for non-commercial use.**
 
@@ -93,5 +107,7 @@ If you use our models, please cite the following paper:
   [3]: https://github.com/AlfredXiangWu/python_misc/blob/master/caffe/caffe_ftr.py
   [4]: https://github.com/AlfredXiangWu/lfw_face_verification_experiment/blob/master/code/evaluation.m
   [5]: http://arxiv.org/abs/1511.02683
+  [6]: http://pan.baidu.com/s/1gfxB0iB
+  [7]: https://drive.google.com/file/d/0ByNaVHFekDPRbFg1YTNiMUxNYXc/view?usp=sharing
   
 
